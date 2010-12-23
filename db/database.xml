@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Database>
+  <table name="url">
+    <item id="shiki">
+      <url>http://www.shikiryu.com</url>
+    </item>
+    <item id="goog">
+      <url>http://www.google.fr</url>
+    </item>
+  </table>
+</Database>

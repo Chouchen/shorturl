@@ -1,11 +1,13 @@
 Options +FollowSymlinks
 
 RewriteEngine On
-RewriteBase   /r
+
+RewriteBase /
 RewriteCond %{REQUEST_FILENAME} !index.php$
+RewriteCond %{REQUEST_FILENAME} !add.php(.*)$
 RewriteCond %{REQUEST_FILENAME} !short.php$
 RewriteCond %{REQUEST_FILENAME} !404.html$
-RewriteCond %{REQUEST_FILENAME} !asecretpassage.php$
+RewriteCond %{REQUEST_FILENAME} !asecretpassagereallysecret.php$
 RewriteCond %{REQUEST_FILENAME} !redir.php(.*)$
 RewriteCond %{REQUEST_FILENAME} !/$
 RewriteRule ^(.*)$ redir.php?name=$1 [L,R]

@@ -3,9 +3,10 @@ include 'XMLSQL.php';
 class ShortURL extends XMLSQL{
 
 	const DATABASE         		= "db/database.xml";
-	const STATE_ALREADY_EXIST 	= "Ce nom de raccourci existe déjà";
-	const STATE_FIELD_MISSING	= "Merci de remplir les 2 champs. ";
-	const STATE_ERROR			= "Erreur. ";
+	const STATE_ALREADY_EXIST 	= "This shortcut already exists. ";
+	const STATE_FIELD_MISSING	= "Don't leave any field blank ! ";
+	const STATE_ERROR			= "Error. ";
+	const STATE_CREATED			= "Shortcut created ";
 	public $_debug = false;
        
     public function __construct($path = ''){

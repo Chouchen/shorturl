@@ -35,7 +35,7 @@ input[type=text]:hover, input[type=search]:hover, input[type=email]:hover, input
 	border:1px solid #000;
 }
 h1 { font-family: 'Geo', arial, serif; }
-h1 a, label {color:#FF9900 !important;}
+h1 a, label, a {color:#FF9900 !important;}
 label{float:left;}
 input[type=submit] {
   display:block;
@@ -97,7 +97,12 @@ button:hover, a.button:hover, input[type=submit]:hover{
 <label for="shortName">Shortcut : </label><input type="text" name="shortName" /><hr class="space" />
 <input type="submit" value="Save">
 </form>
-<br/><br/><br/><br/><br/>
+<br/><br/><?
+if(isset($_SESSION['msg'])){
+	echo $_SESSION['msg'];
+	unset($_SESSION['msg']);
+}
+?><br/><br/><br/>
 <a href="javascript:var%20saisie=prompt('Shortcut%20name:','');if(saisie==null){alert('Shortcut%20cannot%20be%20empty')}else{var%20d=document,w=window,e=w.getSelection,k=d.getSelection,x=d.selection,t=d.title,f='http://nu.x10.bz/add.php',l=d.location,e=encodeURIComponent,p='?v=1&u='+e(l.href)%20+'&t='+e(t)%20+'&s='+saisie,u=f+p;var%20newScript%20=%20document.createElement('script');newScript.type='text/javascript';newScript.src=u;document.body.appendChild(newScript);}void(0)" class="bookmarklet">Short this!</a> <span style="font-size: 14px;">&lt; drag to your bookmarks bar</span> 
 <?
 if(isset($_SESSION['msg'])){

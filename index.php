@@ -87,7 +87,7 @@ button:hover, a.button:hover, input[type=submit]:hover{
   border:1px solid #c2e1ef;
   color:#336699;
 }
-
+.bookmarklet{ text-decoration: none; background: #FF9900; color: white; padding: 8px 20px; -moz-border-radius: 10px; -webkit-border-radius: 10px; border-radius: 10px; border: 1px solid #fff; margin-left:105px;}
 </style>
 </head>
 <body>
@@ -98,7 +98,7 @@ button:hover, a.button:hover, input[type=submit]:hover{
 <input type="submit" value="Save">
 </form>
 <br/><br/><br/><br/><br/>
-<a href="javascript:var%20saisie=prompt('Shortcut%20name:','');if(saisie==null){alert('Shortcut%20cannot%20be%20empty')}else{var%20d=document,w=window,e=w.getSelection,k=d.getSelection,x=d.selection,t=d.title,f='http://nu.x10.bz/add.php',l=d.location,e=encodeURIComponent,p='?v=1&u='+e(l.href)%20+'&t='+e(t)%20+'&s='+saisie,u=f+p;var%20newScript%20=%20document.createElement('script');newScript.type='text/javascript';newScript.src=u;document.body.appendChild(newScript);}void(0)">Short this!</a>
+<a href="javascript:var%20saisie=prompt('Shortcut%20name:','');if(saisie==null){alert('Shortcut%20cannot%20be%20empty')}else{var%20d=document,w=window,e=w.getSelection,k=d.getSelection,x=d.selection,t=d.title,f='http://nu.x10.bz/add.php',l=d.location,e=encodeURIComponent,p='?v=1&u='+e(l.href)%20+'&t='+e(t)%20+'&s='+saisie,u=f+p;var%20newScript%20=%20document.createElement('script');newScript.type='text/javascript';newScript.src=u;document.body.appendChild(newScript);}void(0)" class="bookmarklet">Short this!</a> <span style="font-size: 14px;">&lt; drag to your bookmarks bar</span> 
 <?
 if(isset($_SESSION['msg'])){
 	echo $_SESSION['msg'];

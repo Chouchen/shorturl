@@ -28,6 +28,6 @@ elseif($ret === ShortURL::STATE_ALREADY_EXIST){
 	exit;
 }
 else{
-	echo 'alert("Raccourci cr&eacute;&eacute; : <a href="http://'.$_SERVER['SERVER_NAME'].$folder.rawurlencode($newname).'">http://'.$_SERVER['SERVER_NAME'].$folder.rawurlencode($newname).'</a>");';
+	echo 'alert("Raccourci cr&eacute;&eacute; : http://'.$_SERVER['SERVER_NAME'].$folder.rawurlencode($newname).'");';
 	exit;
 }

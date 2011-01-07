@@ -28,6 +28,12 @@ elseif($ret === ShortURL::STATE_ALREADY_EXIST){
 	exit;
 }
 else{
-	echo 'alert("Raccourci cr&eacute;&eacute; : http://'.$_SERVER['SERVER_NAME'].$folder.rawurlencode($newname).'");';
+	$URI = $_SERVER['REQUEST_URI'];
+	$folders = explode('/', $URI);
+	if(count($folders) > 2){
+		$folder = '/'.$folders[1].'/';
+	}else
+		$folder = '/';	
+	echo 'alert("'.ShortURL::STATE_CREATED.' : http://'.$_SERVER['SERVER_NAME'].$folder.rawurlencode($s).'");window.clipboardData.setData("Text", "http://'.$_SERVER['SERVER_NAME'].$folder.rawurlencode($s).'");';
 	exit;
 }

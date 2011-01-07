@@ -10,14 +10,14 @@ $version	= $_GET['v'];
 
 include 'class/ShortURL.php';
 
-$url = new ShortURL();
+$short = new ShortURL();
 
 if($s=='' || $url==''){
 	echo 'alert("'.ShortURL::STATE_FIELD_MISSING.'");';
 	exit;
 }
 
-$ret = $url->shortThisUrl($url, $s);
+$ret = $short->shortThisUrl($url, $s);
 
 if(is_bool($ret) && !$ret){
 	echo 'alert("'.ShortURL::STATE_ERROR.'");';

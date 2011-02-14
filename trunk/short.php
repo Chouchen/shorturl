@@ -1,4 +1,9 @@
 <?
+/**
+ * 
+ * Saving file
+ * Take name and url, check if name already in base, and save
+ */
 session_start();
 include 'class/ShortURL.php';
 

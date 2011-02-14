@@ -1,4 +1,9 @@
 <?
+/**
+ * 
+ * Main file : style incorporated since it's a unique page
+ * A form and a bookmarklet
+ */
 session_start();
 include 'class/ShortURL.php';
 

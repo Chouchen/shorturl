@@ -1,4 +1,9 @@
 <?
+/**
+ *
+ * Redirecting file
+ * Take the name in the url and redirect if it's in the DB
+ */
 session_start();
 include 'class/ShortURL.php';
 

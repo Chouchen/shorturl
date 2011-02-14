@@ -117,6 +117,6 @@ if(isset($_SESSION['msg'])){
 	unset($_SESSION['msg']);
 }
 ?>
-<div id="footer">Powered by <a href="http://shikiryu.com/" class="myLink">Shikiryu</a></div>
+<div id="footer"><a href="https://www.assembla.com/code/shorturl/subversion/nodes">Sources</a> | Powered by <a href="http://shikiryu.com/" class="myLink">Shikiryu</a></div>
 </body>
 </html>

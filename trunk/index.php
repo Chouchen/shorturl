@@ -35,7 +35,7 @@ input[type=text]:hover, input[type=search]:hover, input[type=email]:hover, input
 	border:1px solid #000;
 }
 h1 { font-family: 'Geo', arial, serif; }
-h1 a, label, a {color:#FF9900 !important;}
+h1 a, label, a {color:#FF9900;}
 label{float:left;}
 input[type=submit] {
   display:block;
@@ -88,6 +88,8 @@ button:hover, a.button:hover, input[type=submit]:hover{
   color:#336699;
 }
 .bookmarklet{ text-decoration: none; background: #FF9900; color: white; padding: 8px 20px; -moz-border-radius: 10px; -webkit-border-radius: 10px; border-radius: 10px; border: 1px solid #fff; margin-left:105px;}
+#footer{clear:both; margin: 200px 0 0 30px;}
+.myLink{padding-left:14px; background:url('http://shikiryu.com/favicon12.png') left center no-repeat;}
 </style>
 </head>
 <body>
@@ -110,5 +112,6 @@ if(isset($_SESSION['msg'])){
 	unset($_SESSION['msg']);
 }
 ?>
+<div id="footer">Powered by <a href="http://shikiryu.com/" class="myLink">Shikiryu</a></div>
 </body>
 </html>

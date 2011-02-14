@@ -94,6 +94,7 @@ button:hover, a.button:hover, input[type=submit]:hover{
 }
 .bookmarklet{ text-decoration: none; background: #FF9900; color: white; padding: 8px 20px; -moz-border-radius: 10px; -webkit-border-radius: 10px; border-radius: 10px; border: 1px solid #fff; margin-left:105px;}
 #footer{clear:both; margin: 200px 0 0 30px;}
+#footer img{vertical-align:text-bottom}
 .myLink{padding-left:14px; background:url('http://shikiryu.com/favicon12.png') left center no-repeat;}
 </style>
 </head>
@@ -117,6 +118,6 @@ if(isset($_SESSION['msg'])){
 	unset($_SESSION['msg']);
 }
 ?>
-<div id="footer"><a href="https://www.assembla.com/code/shorturl/subversion/nodes">Sources</a> | Powered by <a href="http://shikiryu.com/" class="myLink">Shikiryu</a></div>
+<div id="footer"><a href="https://www.assembla.com/code/shorturl/subversion/nodes">Sources</a> | Powered by <a href="http://shikiryu.com/" class="myLink">Shikiryu</a> | <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/2.0/fr/"><img alt="Contrat Creative Commons" style="border-width:0" src="http://i.creativecommons.org/l/by-nc-sa/2.0/fr/80x15.png" /></a></div>
 </body>
 </html>

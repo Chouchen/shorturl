@@ -31,7 +31,7 @@ class ShortURL extends XMLSQL{
     }
 
     public function shortThisUrl($longUrl, $shortName){
-		if($this->pkAlreadyExists($shortName, 'url')){
+		if($this->pkAlreadyExists($shortName, 'url') || file_exists($shortName)){
 			return self::STATE_ALREADY_EXIST;
 		}else{
 			return $this->insert(array('url'=>$longUrl,'hit'=>'0'), rawurlencode($shortName))->into('url')->query();
